@@ -1,0 +1,121 @@
+/* blocks ***********************************/
+*:not(body) {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.menu {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    height: 100%;
+    transition: all 0.7s;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu__invisible-text {
+    display: none;
+}
+
+.menu__link {
+    color: dimgray;
+    transform-style: preserve-3d;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu__heading {
+    font-size: 30px;
+    color: #45217C;
+    font-weight: 500;
+}
+
+.nav_heading1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Codystar', cursive;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.nav_heading1::before,
+.nav_heading1::after {
+    width: 35px;
+    content: "-";
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu__link:hover{
+color: lightskyblue;
+text-shadow: 1px -1px 5px lightblue;
+}
+
+/* elements ***********************************/
+
+.menu__list-item {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+
+
+/* media queries ***********************************/
+
+@media screen and (max-width:625px) {
+    .menu {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .menu__list-item:first-child {
+        border-top: 1px solid lightgray;
+    }
+
+    .menu__list-item {
+        display: block;
+        padding: 1% 0;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .menu__list-item:hover {
+        background-color: lavender;
+    }
+
+    .menu__list-item.active:focus {
+        background-color: #45217C;
+        color: white;
+    }
+
+    .menu__invisible-text {
+        display: inline-block;
+        text-align: inherit;
+        color: lightslategray;
+    }
+
+    .menu__heading {
+        margin-bottom: 0;
+    }
+}

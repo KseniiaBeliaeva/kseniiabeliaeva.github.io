@@ -1,0 +1,57 @@
+.skills {
+        background-color: white;
+        /* min-height: 100%; */
+}
+
+
+.skills__list-item {
+  display: inline-block;
+  margin: 1%;
+  padding: 5%;
+  border-radius: 4px;
+  color: white;
+ -webkit-animation: borders 1s normal forwards;
+ -moz-animation: borders 1s normal forwards;
+ -o-animation: borders 1s normal forwards;
+  animation: borders 1s normal forwards;
+}
+
+.heading--margin {
+    margin: 5% 0;
+}
+
+
+/*cubes*/
+
+.skills__list {
+    height: auto;
+    width: 65%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@keyframes borders {
+   from {
+    animation-delay: 1.2s;
+    background-color: white;
+   }
+
+   to {
+     border-radius: 5px;
+   }
+}
+
+
+/*media query *********************************/
+
+@media screen and (max-width:625px) {
+  .skills__list {
+    width: 90%;
+  }
+}

@@ -1,0 +1,36 @@
+body {
+    font-family: 'Sacramento', cursive;
+    font-family: 'Pontano Sans', sans-serif;
+}
+.heading {
+    margin: 0;
+    color: #45217C;
+    text-align: center;
+    font-size: 60px;
+}
+
+/* @keyframes color-animation {
+    0% {
+        background-color: wheat;
+    }
+    15% {
+        background: #E74F4D;
+    }
+    25% {
+        background: pink;
+    }
+    50% {
+        background: purple;
+    }
+    75% {
+        background: lightcyan;
+    }
+    100% {
+        background: lightgreen;
+    }
+}
+
+.name {
+    height: 100vh;
+    animation: color-animation 3s infinite linear alternate;
+} */

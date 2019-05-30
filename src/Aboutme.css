@@ -1,0 +1,17 @@
+.about-me {
+    width:60%;
+    margin: 0 auto;
+    font-size: 80%;
+   line-height: 2;
+   letter-spacing: 0.3px;
+   transition: all 1s;
+}
+
+@media screen and (max-width:1026px){
+  .about-me {
+  width:80%;
+  font-size: 10px;
+  transition: all 1s;
+  line-height: 1.5;
+  }
+}
